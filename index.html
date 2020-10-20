@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tow in Town</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="homemobile.css">
+
+</head>
+
+<body>
+    <nav class="navbar hnav">
+        <div class="left">
+            <h2>Tow in Town</h2>
+        </div>
+        <div class="right v-class">
+            <ul>
+                <li><a href="#" id="open">Login</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="header">
+        <div class="container">
+            <div class="tagline">
+                <h1>Complete Solutions to breakdowns</h1>
+            </div>
+            <div class="image">
+                <img src="001.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-container" id="container">
+        <div class="popup">
+            <button id="close">X</button>
+            <h2 id="title">Login</h2>
+            <p id="wemail"></p>
+            <div class="input">
+                <label for="email" id="elabel">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input">
+                <label for="Password" id="plabel">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="input">
+                <button class="submit" onclick="login()" id="login">LOGIN</button>
+            </div>
+            <div class="input">
+                <button class="submit" onclick="create()" id="create">CREATE</button>
+            </div>
+            <div id="popitems">
+                <div class="card">
+                    <p>Book a service</p>
+                </div>
+                <div class="card">
+                    <p>Your services</p>
+                </div>
+                <div class="card">
+                    <p>Account</p>
+                </div>
+
+            </div>
+            <div class="input">
+                <button class="submit" onclick="logout()" id="logout">Logout</button>
+            </div>
+            <div class="icons">
+                <button onclick="google()" id ="google" ><i class="fab fa-google fa-2x"></i></button>
+                <button onclick="facebook()" id="facebook"><i class="fab fa-facebook fa-2x"></i></button>
+                <button id="github"><i class="fab fa-github fa-2x"></i></button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <section class="mid">
+        <h2>OUR SERVICES</h2>
+        <div class="items">
+            <div class="card2">
+                <p>Repairs</p>
+                <div class="cimage">
+                    <img src="repair.png" alt="">
+                </div>
+            </div>
+            <div class="card2">
+                <p>Selling Spair Parts</p>
+                <div class="cimage">
+                    <img src="money.png" alt="">
+                </div>
+            </div>
+            <div class="card2">
+                <p>Instant Services on Roads</p>
+                <div class="cimage">
+                    <img src="road.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyBtpEfi30D7MrwY4sJl9rW3VlSK8f-sVz0",
+            authDomain: "vehicle-breakdown-4fefc.firebaseapp.com",
+            databaseURL: "https://vehicle-breakdown-4fefc.firebaseio.com",
+            projectId: "vehicle-breakdown-4fefc",
+            storageBucket: "vehicle-breakdown-4fefc.appspot.com",
+            messagingSenderId: "965791330575",
+            appId: "1:965791330575:web:8b32ca01900fbbe00f4e7a",
+            measurementId: "G-22N2SLVXDC"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

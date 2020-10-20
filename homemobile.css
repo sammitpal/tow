@@ -1,0 +1,44 @@
+.navbar{
+    flex-direction: column;
+    text-align: center;
+}
+.navbar .left{
+    width: fit-content;
+}
+.navbar .right{
+    width: 100%;
+}
+ul{
+    flex-direction: column;
+    padding: 20px;
+}
+ul li {
+    margin: 20px 0;
+}
+.header{
+    height: 500px;
+}
+.header .container{
+    flex-direction: column;
+}
+.burger{
+    display: block;
+}
+.v-class{
+    opacity: 0;
+}
+.hnav{
+    height: 30px;
+}
+.header .container .tagline{
+   font-size: 1.5rem; 
+}
+.container .image
+{
+    margin: auto;
+    max-width: 50%;
+    width: 300px;
+}
+.image img{
+    width: 100%;
+}
